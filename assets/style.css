@@ -16,7 +16,11 @@
   --fw-bold: 800;
 
   --fs-main: 0.875rem;
+
+  --content-margin: 3rem;
 }
+
+/* ----------------------------- GENERAL ELEMENTS ----------------------------- */
 
 body {
   font-family: var(--ff-base);
@@ -25,5 +29,110 @@ body {
   font-weight: var(--fw-regular);
 
   display: grid;
-  margin: 2.5rem;
+  /* margin: 2.5rem; */
+}
+
+header {
+  background-color: #343a40;
+  margin: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  min-height: 50px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: var(--clr-neutral-light);
+  padding: 0 1rem;
+}
+
+a:hover {
+  color: var(--clr-accent-primary);
+  transition: 0.4s;
+}
+
+img {
+}
+
+h1 {
+  font-size: 4vw;
+}
+
+h2 {
+  font-size: 2vw;
+}
+
+span {
+  color: var(--clr-accent-primary);
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+/* ------------------------------- CLASS BASED ELEMENTS ------------------------- */
+
+.logo {
+  color: var(--clr-neutral-light);
+  font-size: 1.75rem;
+}
+
+.hero {
+  /* width: 100vw; */
+  height: 85vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero_lhs {
+  display: grid;
+  align-items: end;
+}
+
+.hero_rhs {
+  display: grid;
+}
+
+.text_block {
+  display: grid;
+  justify-items: end;
+  align-content: center;
+  margin-right: 100px;
+}
+
+.name {
+  margin-top: -1vw;
+}
+
+.title_text {
+  font-size: 1vw;
+  margin-top: 2vw;
+}
+
+.tech_block {
+  display: grid;
+  justify-items: end;
+  align-content: center;
+  margin-right: 100px;
+}
+
+.icon_container {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 60px;
+  margin: 10px 15px;
+}
+.colour_band {
+  min-height: 50px;
+  background-image: linear-gradient(
+    to right,
+    var(--clr-accent-primary),
+    var(--clr-accent-secondary)
+  );
 }
