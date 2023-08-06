@@ -16,7 +16,7 @@
 
   --fs-main: 0.875rem;
 
-  --content-margin: 3rem;
+  /* --content-margin: 3rem; */
 }
 
 /* ----------------------------- GENERAL ELEMENTS ----------------------------- */
@@ -38,7 +38,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  min-height: 5rem;
+  /* min-height: 5rem; */
 }
 
 a {
@@ -54,6 +54,7 @@ a:hover {
 }
 
 img {
+  width: 100%;
 }
 
 h1 {
@@ -66,7 +67,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 h4 {
@@ -83,7 +84,7 @@ p {
 }
 
 button {
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   border: none;
   padding: 15px 32px;
   border-radius: 3px;
@@ -105,41 +106,46 @@ button:hover {
 
 .hero {
   /* width: 100vw; */
-  height: 85vh;
+  /* height: 85vh; */
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin-top: 7.5rem;
+  padding: 0 2rem;
 }
 
 .hero_lhs {
-  display: grid;
-  align-items: end;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
 }
 
 .hero_rhs {
-  display: grid;
+  /* display: grid; */
+  display: flex;
+  /* flex-direction: column; */
 }
 
 .text_block {
-  display: grid;
-  justify-items: end;
-  align-content: center;
-  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  /* line-height: 5rem; */
 }
 
 .name {
-  margin-top: -1vw;
+  /* margin-top: -1vw; */
 }
 
 .title_text {
   font-size: 1.25rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .tech_block {
-  display: grid;
+  /* display: grid;
   justify-items: end;
   align-content: center;
-  margin-right: 100px;
+  margin-right: 100px; */
 }
 
 .icon_container {
@@ -149,12 +155,13 @@ button:hover {
 
 .icon {
   width: 4rem;
-  margin: 10px 15px;
+  /* margin: 10px 15px; */
 }
+
 .colour_band {
   min-height: 4rem;
   background-image: linear-gradient(
-    to right,
+    to left,
     var(--clr-accent-primary),
     var(--clr-accent-secondary)
   );
@@ -166,9 +173,9 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  /* padding: 5vw; */
-  margin: 5rem;
-  height: 60vh;
+  padding: 2rem;
+  margin-top: 5rem;
+  /* height: 60vh; */
 }
 
 .meta_box {
@@ -189,13 +196,19 @@ button:hover {
 }
 
 .interest_box {
-  margin-bottom: 1.2rem;
-  padding-bottom: 1rem;
+  /* margin-bottom: 1.2rem; */
+  /* padding-bottom: 1rem; */
   border-bottom: 2px solid lightgrey;
 }
 
+.about_lhs {
+  display: flex;
+  flex-direction: column;
+}
+
 .about_rhs {
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* -------------------------  PROJECT SECTION --------------------------- */
@@ -204,7 +217,12 @@ button:hover {
   display: grid;
   grid-template-columns: 35fr 65fr;
   justify-items: center;
-  margin-top: 25rem;
+  margin-top: 5rem;
+}
+
+.project_lhs {
+  display: flex;
+  flex-direction: column;
 }
 
 .project_rhs {
@@ -234,4 +252,72 @@ button:hover {
 
 .description p {
   margin-top: -0.5rem;
+}
+
+/* --------------------- MEDIA QUERIES -------------------- */
+
+@media only screen and (max-width: 1250px) {
+  /* .hero {
+    grid-template-columns: 35fr 65fr;
+  } */
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    grid-template-columns: 2fr;
+  }
+
+  .projects {
+    grid-template-columns: 2fr;
+  }
+
+  .text_block {
+    text-align: center;
+  }
+
+  .tech_block {
+    text-align: center;
+  }
+
+  /* h1 {
+    font-size: 5vw;
+  } */
+}
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .project_rhs {
+    grid-template-columns: 1fr;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .meta_box {
+    text-align: center;
+  }
 }
