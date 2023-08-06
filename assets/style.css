@@ -38,7 +38,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  min-height: 50px;
+  min-height: 5rem;
 }
 
 a {
@@ -57,20 +57,20 @@ img {
 }
 
 h1 {
-  font-size: 4vw;
+  font-size: 5rem;
 }
 
 h2 {
-  font-size: 2vw;
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 2vw;
+  font-size: 3rem;
   margin-bottom: 3rem;
 }
 
 h4 {
-  font-size: 2vw;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -79,7 +79,7 @@ span {
 }
 
 p {
-  font-size: 1vw;
+  font-size: 1.25rem;
 }
 
 button {
@@ -131,8 +131,8 @@ button:hover {
 }
 
 .title_text {
-  font-size: 1vw;
-  margin-top: 2vw;
+  font-size: 1.25rem;
+  margin-top: 2rem;
 }
 
 .tech_block {
@@ -148,11 +148,11 @@ button:hover {
 }
 
 .icon {
-  width: 4vw;
+  width: 4rem;
   margin: 10px 15px;
 }
 .colour_band {
-  min-height: 50px;
+  min-height: 4rem;
   background-image: linear-gradient(
     to right,
     var(--clr-accent-primary),
@@ -167,35 +167,35 @@ button:hover {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   /* padding: 5vw; */
-  margin: 5vw;
+  margin: 5rem;
   height: 60vh;
 }
 
 .meta_box {
-  margin-bottom: 2vw;
+  margin-bottom: 2rem;
 }
 
 .meta_number {
   color: var(--clr-accent-primary);
-  font-size: 5vw;
+  font-size: 5.5rem;
   font-weight: 500;
 }
 
 .meta_title {
   color: var(--clr-accent-primary);
-  font-size: 2vw;
+  font-size: 2.5rem;
   font-weight: 500;
-  margin-top: -2.2vw;
+  margin-top: -2.2rem;
 }
 
 .interest_box {
   margin-bottom: 1.2rem;
-  padding-bottom: 1vw;
+  padding-bottom: 1rem;
   border-bottom: 2px solid lightgrey;
 }
 
 .about_rhs {
-  padding: 2vw;
+  padding: 2rem;
 }
 
 /* -------------------------  PROJECT SECTION --------------------------- */
