@@ -155,7 +155,7 @@ button:hover {
 
 .icon {
   width: 4rem;
-  /* margin: 10px 15px; */
+  margin: 10px 15px;
 }
 
 .colour_band {
@@ -227,13 +227,18 @@ button:hover {
 
 .project_rhs {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .project_card {
   max-width: 250px;
   margin: 2rem;
+  text-align: center;
+}
+
+.first {
+  max-width: 400px;
 }
 
 .project_card img {
@@ -252,6 +257,34 @@ button:hover {
 
 .description p {
   margin-top: -0.5rem;
+}
+
+/* ----------------------- CONTACT SECTION ----------------- */
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  background-color: #343a40;
+}
+
+.contact p {
+  color: var(--clr-neutral-semi);
+}
+
+.phone {
+  display: flex;
+}
+.email {
+  display: flex;
+}
+.socials {
+  display: flex;
+}
+.socials img {
+  width: 50px;
+  padding: 0.5rem;
 }
 
 /* --------------------- MEDIA QUERIES -------------------- */
@@ -319,5 +352,9 @@ button:hover {
 
   .meta_box {
     text-align: center;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
   }
 }
