@@ -2,7 +2,7 @@
 
 ## Description
 
-Entering into the third week of my front end bootcamp i wanted to create a portfolio site as a project and as en exercise in practise. As time goes on, this portfolio will be added to and finessed, with the goal being to showcase my skills.
+Entering into the third week of my front end bootcamp i wanted to create a portfolio site as a project and as an exercise in practise. As time goes on, this portfolio will be added to and finessed, with the goal being to showcase my skills.
 
 The main take away lessons from this project has been media queries.
 
@@ -16,7 +16,7 @@ No specific usage required.
 
 ## Credits
 
-I would like to list and give attribution to Jonas schmedtmann for designing the omniffod project. I played no part in the creative process of that web app. Only programmed by me.
+I would like to list and give attribution to Jonas schmedtmann for designing the omnifood project. I played no part in the creative process of that web app. Only programmed by me.
 
 ## License
 
